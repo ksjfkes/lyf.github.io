@@ -12,7 +12,7 @@
   <link rel="stylesheet" href="assets/bootstrap.min.css" />
   <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css" rel="stylesheet" />
   <link rel="stylesheet" href="style.css" type="text/css" media="all" />
-  
+
 </head>
 
 <body>
@@ -114,6 +114,22 @@
       </div>
       <div class="content-section" id="Information">
         <h3>Information</h3>
+        <button onclick="myFunction()">Personal information</button>
+
+        <p id="demo"></p>
+
+        <script>
+        function myFunction() {
+          var txt;
+          var person = prompt("请输入我的姓名：", "");
+          if (person == 林毅峰 || person == "") {
+            txt = "我叫林毅峰，北京大学公共卫生学院21级本科生。";
+          } else {
+            txt = "你这输得有问题啊" ;
+          }
+          document.getElementById("demo").innerHTML = txt;
+        }
+        </script>
         <br />
         <br />
         
