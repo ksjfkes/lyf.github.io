@@ -112,6 +112,22 @@
       </div>
       <div class="content-section" id="Information">
         <h3>Information</h3>
+        <button onclick="myFunction()">我是谁</button>
+
+        <P id="demo"></P>
+
+        <script>
+        function myFunction() {
+          var txt;
+          var person = prompt("我的名字是？或者我的学号是？","");
+          if (person == 2110306124 || person == "林毅峰") {
+            txt = "Bingo！ 我叫林毅峰，北京大学公共卫生学院21级预防1班本科生，来自山东省潍坊市安丘市。";
+          } else {
+            txt  = "你这输的有问题啊";
+          }
+          document.getElementById("demo").innerHTML = txt;
+        } 
+        </script> 
       </div>     
     </div>
   </div>
